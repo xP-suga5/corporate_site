@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社TECH</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="img/logo.png" alt="">
+    </div>
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li><a href="index.html" class="header__nav-list-link">ホーム</a></li>
+        <li><a href="service.html" class="header__nav-list-link">事業内容</a></li>
+        <li><a href="news.html" class="header__nav-list-link">ニュース</a></li>
+        <li><a href="blog.html" class="header__nav-list-link">社員ブログ</a></li>
+        <li><a href="company.html" class="header__nav-list-link">会社概要</a></li>
+        <li><a href="recruit.html" class="header__nav-list-link">採用情報</a></li>
+        <li><a href="contact.html" class="header__nav-list-link">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <nav class="header__drawer_nav" id="header__drawer_nav">
+      <ul class="header__drawer_nav-list">
+        <li><a href="index.html" class="header__drawer_nav-list-link">ホーム</a></li>
+        <li><a href="service.html" class="header__drawer_nav-list-link">事業内容</a></li>
+        <li><a href="news.html" class="header__drawer_nav-list-link">ニュース</a></li>
+        <li><a href="blog.html" class="header__drawer_nav-list-link">社員ブログ</a></li>
+        <li><a href="company.html" class="header__drawer_nav-list-link">会社概要</a></li>
+        <li><a href="recruit.html" class="header__drawer_nav-list-link">採用情報</a></li>
+        <li><a href="contact.html" class="header__drawer_nav-list-link">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__nav-menu" id="header__nav-menu">
+      <span class="header__menu__line--top"></span>
+      <span class="header__menu__line--middle"></span>
+      <span class="header__menu__line--bottom"></span>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="top_wrapper">
+      <div class="top_wrapper__img">
+        <h1 class="top_wrapper__ttl">
+          お問い合わせ
+        </h1>
+      </div>
+    </div>
+    <!-- page内容 -->
+    <div id="contact">
+      <div class="container">
+        <form action="index.html" method="post" class="contact__content">
+          <div class="contact__content-box">
+            <label for="company" class="contact__content-lebel">
+              会社名
+            </label>
+            <input type="text" id="company" name="company" class="contact__content-input contact__content-input-company">
+          </div>
+          <div class="contact__content-box">
+            <label for="name" class="contact__content-lebel">
+              お名前
+              <span class="contact__content-required">*</span>
+            </label>
+            <input type="text" id="name" name="name" class="contact__content-input  contact__content-input-name" required>
+          </div>
+          <div class="contact__content-box">
+            <label for="mail" class="contact__content-lebel">
+              メールアドレス
+              <span class="contact__content-required">*</span>
+            </label>
+            <input type="email" id="mail" name="mail" class="contact__content-input contact__content-input-mail" required>
+          </div>
+
+          <div class="contact__content-box">
+            <label for="detail" class="contact__content-lebel">
+              お問い合わせ内容
+              <span class="contact__content-required">*</span>
+            </label>
+            <textarea id="detail" name="detail" class="contact__content-textarea-detail"
+            row="10" cols="100" required>
+            </textarea>
+          </div>
+
+          <input type="submit" value="お申し込み" class="contact__content-submit">
+        </form>
+      </div>
+    </div>
+
+    <!-- page内容 -->
+  </main>
+
+  <footer class="footer">
+    <small class="copyright">
+      &copy; 2020 TECH inc.
+    </small>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li><a href="index.html" class="footer__nav-list-link">ホーム</a></li>
+        <li><a href="service.html" class="footer__nav-list-link">事業内容</a></li>
+        <li><a href="news.html" class="footer__nav-list-link">ニュース</a></li>
+        <li><a href="blog.html" class="footer__nav-list-link">社員ブログ</a></li>
+        <li><a href="company.html" class="footer__nav-list-link">会社概要</a></li>
+        <li><a href="recruit.html" class="footer__nav-list-link">採用情報</a></li>
+        <li><a href="contact.html" class="footer__nav-list-link">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
