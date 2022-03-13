@@ -35,6 +35,10 @@ a {
   margin: 30px auto;
 }
 
+.center__btn:hover {
+  opacity: 0.8;
+}
+
 /*-----header-------*/
 .header {
   height: 70px;
@@ -44,12 +48,17 @@ a {
   top: 0;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 .header__logo {
   width: 70px;
   margin-top: 10px;
   margin-left: 40px;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
 }
 
 .header__nav {
@@ -70,6 +79,10 @@ a {
   color: #000;
   font-size: 17px;
   font-weight: bold;
+}
+
+.header__nav-list-link:hover {
+  opacity: 0.8;
 }
 
 /* ======drawer======= */
@@ -138,7 +151,6 @@ a {
   transform: translateX(100%);
 }
 
-
 @media screen and (max-width: 768px) {
   .header__nav {
     display: none;
@@ -185,7 +197,7 @@ a {
 }
 
 /*ページコンテンツ*/
-#news{
+#news {
   margin: 80px 3% 200px;
 }
 
@@ -213,6 +225,10 @@ a {
   color: #000;
 }
 
+.news-list-item-link:hover {
+  opacity: 0.8;
+}
+
 .news-list-item-date {
   padding: 20px;
   font-size: 16px;
@@ -223,6 +239,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  #news {
+    margin: 80px 0 200px;
+  }
+
   .news-list-item {
     padding: 0.5% 0;
   }
@@ -250,7 +270,7 @@ a {
   font-weight: bold;
   text-align: center;
 }
-.contact__container-info{
+.contact__container-info {
   font-size: 15px;
   text-align: center;
   margin-bottom: 30px;
@@ -296,7 +316,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .footer{
+  .footer {
     justify-content: space-around;
   }
 

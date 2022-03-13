@@ -35,6 +35,10 @@ a {
   margin: 30px auto;
 }
 
+.center__btn:hover {
+  opacity: 0.8;
+}
+
 /*-----header-------*/
 .header {
   height: 70px;
@@ -44,12 +48,17 @@ a {
   top: 0;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 .header__logo {
   width: 70px;
   margin-top: 10px;
   margin-left: 40px;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
 }
 
 .header__nav {
@@ -70,6 +79,10 @@ a {
   color: #000;
   font-size: 17px;
   font-weight: bold;
+}
+
+.header__nav-list-link:hover {
+  opacity: 0.8;
 }
 
 /* ======drawer======= */
@@ -137,7 +150,6 @@ a {
 .in {
   transform: translateX(100%);
 }
-
 
 @media screen and (max-width: 768px) {
   .header__nav {
@@ -269,9 +281,14 @@ a {
   cursor: pointer;
   background-color: #cd0224;
   color: #fff;
+  font-weight: bold;
   padding: 10px 10px;
   width: 150px;
   display: inline;
+}
+
+.news__btn:hover{
+  opacity: 0.8;
 }
 
 .news-list {
@@ -291,6 +308,10 @@ a {
   display: flex;
   text-align: center;
   align-items: center;
+}
+
+.news-list-item:hover{
+  background-color: rgba(196, 196, 196, 0.8);
 }
 
 .news-list-item-link {
@@ -341,6 +362,10 @@ a {
   padding: 0 1%;
 }
 
+.blog-list-item-img-link:hover {
+  opacity: 0.8;
+}
+
 .blog-list-item-img {
   width: 100%;
 }
@@ -354,7 +379,7 @@ a {
   color: #000;
 }
 
-.blog__btn{
+.blog__btn {
   margin-top: 50px;
 }
 
@@ -362,6 +387,10 @@ a {
   .blog-list-item {
     width: 98%;
     padding: 0 1%;
+  }
+
+  .center__btn {
+    width: 250px;
   }
 }
 
@@ -390,6 +419,11 @@ a {
   background-color: #000;
 }
 
+.company__item-company:hover,
+.company__item-recruit:hover {
+  opacity: 0.8;
+}
+
 /*お問い合わせ*/
 #contact {
   margin-top: 200px;
@@ -401,7 +435,7 @@ a {
   font-weight: bold;
   text-align: center;
 }
-.contact__container-info{
+.contact__container-info {
   font-size: 15px;
   text-align: center;
   margin-bottom: 30px;
@@ -447,7 +481,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .footer{
+  .footer {
     justify-content: space-around;
   }
 

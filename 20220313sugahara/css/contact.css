@@ -35,6 +35,10 @@ a {
   margin: 30px auto;
 }
 
+.center__btn:hover {
+  opacity: 0.8;
+}
+
 /*-----header-------*/
 .header {
   height: 70px;
@@ -44,12 +48,17 @@ a {
   top: 0;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 .header__logo {
   width: 70px;
   margin-top: 10px;
   margin-left: 40px;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
 }
 
 .header__nav {
@@ -70,6 +79,10 @@ a {
   color: #000;
   font-size: 17px;
   font-weight: bold;
+}
+
+.header__nav-list-link:hover {
+  opacity: 0.8;
 }
 
 /* ======drawer======= */
